@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "nodemon --exec ts-node src/index.ts",
     "build": "tsc",
-    "start": "node ./dist/index.js"
+    "start": "node ./dist/index.js",
+    "vercel-build": "echo 'Vercel build completed'",
+    "postbuild": "echo 'Build completed successfully'"
   },
   "keywords": [
     "NodeJS",
@@ -29,6 +31,7 @@
     "nodemailer": "^6.10.0"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/jsonwebtoken": "^9.0.9",

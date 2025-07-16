@@ -30,16 +30,16 @@ export class AuthController {
             token.token = generateToken();
             token.user = user.id;
 
-            // Enviar email de confirmación de cuenta
-            AuthEmail.sendConfirmationEmail({
-                email: user.email,
-                name: user.name,
-                token: token.token
-            });
+            // Enviar email de confirmación de cuenta (temporalmente deshabilitado)
+            // AuthEmail.sendConfirmationEmail({
+            //     email: user.email,
+            //     name: user.name,
+            //     token: token.token
+            // });
 
             await Promise.allSettled([token.save(), user.save()]);
 
-            res.send('¡Cuenta creada correctamente, revisa tu email para confirmarla!');
+            res.send('¡Cuenta creada correctamente! (Email temporalmente deshabilitado para testing)');
 
         } catch (error) {
             res.status(500).json({ error: 'Hubo un error' });
