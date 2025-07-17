@@ -7,7 +7,7 @@
     "dev": "nodemon --exec ts-node src/index.ts",
     "build": "tsc",
     "start": "node ./dist/index.js",
-    "vercel-build": "echo 'Vercel build completed'",
+    "vercel-build": "echo 'API build completed - no build step needed'",
     "postbuild": "echo 'Build completed successfully'"
   },
   "keywords": [
@@ -37,6 +37,7 @@
     "@types/jsonwebtoken": "^9.0.9",
     "@types/morgan": "^1.9.9",
     "@types/nodemailer": "^6.4.17",
+    "@vercel/node": "^5.3.6",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
