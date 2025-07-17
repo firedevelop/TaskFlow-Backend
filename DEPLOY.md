@@ -11,15 +11,17 @@
 Configura estas variables en tu proyecto de Vercel:
 
 ```bash
-DATABASE_URL=mongodb+srv://firedevelopcom:sg9WEZffh5MmvpwM@taskflow.cwxcjwk.mongodb.net/taskflow?retryWrites=true&w=majority&appName=TaskFlow
-JWT_SECRET=6f15011d07d2642dde9be211602a11f7c6972accfcc3997439c75099f233f119
+DATABASE_URL=mongodb+srv://[USERNAME]:[PASSWORD]@[CLUSTER].mongodb.net/[DATABASE]?retryWrites=true&w=majority
+JWT_SECRET=[TU_JWT_SECRET_AQUI]
 NODE_ENV=production
 FRONTEND_URL=https://taskflow-frontend-ten.vercel.app
 EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
-EMAIL_USER=tu_email@gmail.com
-EMAIL_PASS=tu_password_de_aplicacion
+EMAIL_USER=[TU_EMAIL]
+EMAIL_PASS=[TU_PASSWORD_DE_APLICACION]
 ```
+
+> ⚠️ **Importante**: Reemplaza los valores entre corchetes con tus credenciales reales en Vercel, no en este archivo.
 
 ### Endpoints Disponibles
 
